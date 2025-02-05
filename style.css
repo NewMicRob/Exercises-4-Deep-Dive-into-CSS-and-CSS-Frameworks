@@ -1,0 +1,175 @@
+:root {
+--maincolor: black;
+--secondary-color: aliceblue;
+--font-size-large: 25px;
+}
+
+body {
+    background-color: #e3efce;
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--maincolor);
+    font-size: var(--font-size-large);
+    margin: 0;
+}
+
+.header {
+    width: 100%;
+    position: fixed;
+    margin:0;
+    height: 100vh;
+}
+
+h1 {
+    position: absolute, center;
+    background-color:#e3efce;
+    color: var(--maincolor);
+    text-align: center;
+    font-size: var(--font-size-large);
+    padding: 100px;
+    margin: 0;
+}
+
+/* use var font colour + size, center the box, and add padding */
+.intro {
+    font-size: var(--font-size-large);
+    text-align: center;
+    padding: 20px;
+    color: var(--secondary-color);
+    background-color: #3a5a40;
+    border-radius: 5px;
+    margin-top: 150px;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+}
+
+/* arrange horizontally, space evenly, give padding, and background colour */
+.flexbox-section {
+    font-size: x-large;
+    text-align: center;
+}
+.flexbox-section h2 {
+    background-color: #ffecac;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: fit-content;
+    padding: 10px;
+}
+.flexbox-container {
+    display: flex;
+    text-align: center;
+    font-size: var(--font-size-large);
+    justify-content: space-evenly;
+    margin: auto;
+    padding: 5px;
+    color: var(--maincolor);
+    background-color: #344e41;
+    border-radius: 25px;
+    min-width: fit-content;
+    max-width: 70%;
+}
+
+.flexbox-item{
+    border-color: var(--maincolor);
+    border-radius: 10px;
+    padding: auto;
+    margin: 10px;
+}
+
+#service1 {
+    background-color: #cedaba;
+    padding: 10px;
+}
+
+#service2 {
+    background-color: #b1c392;
+    padding: 10px;
+}
+#service3 {
+    background-color: #a3b18a;
+    padding: 10px;
+}
+
+/* Grid 2x3 grid, padding, spacing, margin */
+.grid-section h2 {
+    background-color: #ffecac;
+    text-align: center;
+    margin-left: 33%;
+    margin-right: 33%;
+    padding: auto;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    background-color: #344e41;
+    color: var(--maincolor);
+    border-radius: 10px;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: auto;
+}
+
+.grid-item {
+    padding: 25px;
+    text-align: center;
+}
+
+#project1 {
+    background-color: #abc5ab;
+}
+
+#project2 {
+    background-color: #9fb79f;
+}
+
+#project3 {
+    background-color: #8aa08a;
+}
+
+#project4 {
+    background-color: #748974;
+    color: var(--secondary-color);
+}
+
+#project5 {
+    background-color: #667866;
+    color: var(--secondary-color);
+}
+
+#project6 {
+    background-color: #505e50;
+    color: var(--secondary-color);
+}
+
+.relative-container {
+    position: relative;
+    background-color: rgb(86, 115, 27);
+    color: var(--secondary-color);
+    text-align: center;
+}
+
+.absolute-box {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(47, 171, 69, 0.5);
+    color: var(--maincolor);
+    padding: 10px;
+    margin: 20px;
+}
+
+
+.footer p {
+    position: fixed, bottom;
+    text-align: center;
+    background-color: white;
+    margin-left: 33%;
+    margin-right: 33%;
+    width: fit-content;
+}
